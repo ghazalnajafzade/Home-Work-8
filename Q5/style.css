@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 293px);
+  grid-template-areas:
+    "a d f g"
+    "b d e g "
+    "b c e h";
+
+  gap: 25px;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
+.g {
+  grid-area: g;
+}
+.h {
+  grid-area: h;
+}
+@media (max-width: 1380px) {
+  .container {
+    grid-template-columns: repeat(2, 293px);
+    grid-template-areas:
+      "a d"
+      "b d "
+      "b c"
+      "f g"
+      "e g "
+      "e h";
+  }
+}
